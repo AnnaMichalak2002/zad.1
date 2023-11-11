@@ -2,4 +2,4 @@
 
 usage: python script.py <plik_pdb_ze_strukturą_białka>.pdb
 
-results: zwizualnowana mapa kontaktów za pomocą biblioteki matplotlib
+results: zwizualizowana mapa kontaktów za pomocą biblioteki matplotlib
