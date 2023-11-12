@@ -1,5 +1,12 @@
-# zad.1 W tym zadaniu należało zaimplementować skrypt z wykorzystaniem biblioteki Biopython, który załaduje strukturę białka (np. strukturę 1HHB) i wyznaczy dla niej mapę kontaktów o progu odległości 8A.
+# Contact map
+# Overview
+This Python code load a protein structure (e.g. 1HHB structure) and determine a contact map for it with a distance threshold of 8A.
 
-usage: python script.py <plik_pdb_ze_strukturą_białka>.pdb
+# Usage 
+```bash
+python script.py <pdb_file_path>
+```
+Replace <pdb_file_path> with the path to the PDB file you want to analyze.
 
-results: zwizualizowana mapa kontaktów za pomocą biblioteki matplotlib
+# Output
+visualized contact map using matplotlib library
