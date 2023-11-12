@@ -9,4 +9,4 @@ python script.py <pdb_file_path>
 Replace <pdb_file_path> with the path to the PDB file you want to analyze.
 
 # Output
-visualized contact map using matplotlib library
+File named contactMap.pdf that visualized contact map (using matplotlib library).
