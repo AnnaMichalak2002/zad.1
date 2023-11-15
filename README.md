@@ -1,7 +1,8 @@
 # Contact map
 # Overview
 This Python code load a protein structure (e.g. 1HHB structure) and determine a contact map for it with a distance threshold of 8A.
-
+# Requirements
+Python 3.x Biopython library, NumPy library, Matplotlib library
 # Usage 
 ```bash
 python script.py <pdb_file_path>
