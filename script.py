@@ -8,7 +8,7 @@ def save_plot_contact_map(contact_map, output_image):
     plt.title('Contact Map')   #tytul
     plt.xlabel('Residue Index')  #osX
     plt.ylabel('Residue Index')  #osY
-    plt.colorbar()   #tworzy legendę kolorów, która przyporządkowuje kolorystykę wykresu do odpowiadających wartości w mapie kolorów
+    # plt.colorbar()   #tworzy legendę kolorów, która przyporządkowuje kolorystykę wykresu do odpowiadających wartości w mapie kolorów
     plt.savefig(output_image, format='pdf')  # Zapisujemy wykres do pliku PDF
 #
 def calculate_contact_map(structure, threshold=8.0):
