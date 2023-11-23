@@ -13,8 +13,8 @@ def save_plot_contact_map(contact_map, output_image):
 #
 def calculate_contact_map(structure, threshold=8.0):
     # przekształca generator w listę i uzyskaj liczbę reszt
-    residues = list(structure[0].get_residues())
-    num_residues = len(residues)
+    # residues = list(structure[0].get_residues())
+    # num_residues = len(residues)
 
     # numpy i  macierz kontaktów
 
