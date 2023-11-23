@@ -9,6 +9,7 @@ def save_plot_contact_map(contact_map, output_image):
     plt.xlabel('Residue Index')  #osX
     plt.ylabel('Residue Index')  #osY
     # plt.colorbar()   #tworzy legendę kolorów, która przyporządkowuje kolorystykę wykresu do odpowiadających wartości w mapie kolorów
+    plt.show()   #wyświetla
     plt.savefig(output_image, format='pdf')  # Zapisujemy wykres do pliku PDF
 #
 def calculate_contact_map(structure, threshold=8.0):
@@ -45,18 +46,6 @@ def calculate_contact_map(structure, threshold=8.0):
     return contact_map
 
 
-
-
-
-def plot_contact_map(contact_map):
-    #tu wykorzystamy matplotliba do stworzenia wizualizacji mapy kontaktów za pomocą wykresu typu heatmap
-    plt.imshow(contact_map, cmap='viridis', interpolation='none') #funkcji imshow z biblioteki Matplotlib do wyświetlenia macierzy kontaktów jako obrazu,  kolory z palety virdis, brak interpolacji
-    plt.title('Contact Map') #tytuł
-    plt.xlabel('Residue Index') # oś X odnosi się do indeksów reszt białka w macierzy kontaktów.
-    plt.ylabel('Residue Index')  # oś Y  odnosi się do indeksów reszt białka w macierzy kontaktów.
-    # plt.colorbar()  # Dodaje pasek kolorów, który przyporządkowuje kolorystykę z wykresu do odpowiadających im wartości w macierzy kontaktów.
-    plt.show()   #wyświetla
-
 if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Usage: python script.py <pdb_file>")
@@ -71,8 +60,5 @@ if __name__ == "__main__":
     # Wyznaczamy mapę kontaktów
     contact_map = calculate_contact_map(structure)
 
-    # Zapisujemy wykres mapy kontaktów do pliku
+    # Zapisujemy i wyświetlamy wykres mapy kontaktów do pliku
     save_plot_contact_map(contact_map, 'contactMap.pdf')
-
-    # Wyświetlamy mapę kontaktów
-    plot_contact_map(contact_map)
